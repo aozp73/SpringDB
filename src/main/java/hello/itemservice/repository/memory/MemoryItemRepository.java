@@ -46,7 +46,8 @@ public class MemoryItemRepository implements ItemRepository {
                         return true;
                     }
                     return item.getItemName().contains(itemName);
-                }).filter(item -> {
+                })
+                .filter(item -> {
                     if (maxPrice == null) {
                         return true;
                     }
