@@ -4,7 +4,7 @@
 <mapper namespace="hello.itemservice.repository.mybatis.ItemMapper">
 
     <insert id="save" useGeneratedKeys="true" keyProperty="id">
-        insert into item (item_name, price, quantity)
+        aaainsert into item (item_name, price, quantity)
         values (#{itemName}, #{price}, #{quantity})
     </insert>
 
